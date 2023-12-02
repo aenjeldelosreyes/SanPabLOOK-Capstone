@@ -414,7 +414,8 @@
                     android:textColor="@color/priceColor"
                     android:textSize="12sp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/palmeraText" />
+                    app:layout_constraintTop_toBottomOf="@+id/palmeraText"
+                    tools:ignore="DuplicateIds" />
 
               </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>
@@ -483,7 +484,7 @@
 
       <!-- Most Preferred -->
 
-      <androidx.constraintlayout.widget.ConstraintLayout
+     <!-- <androidx.constraintlayout.widget.ConstraintLayout
           android:id="@+id/preferredConstraint"
           android:layout_width="match_parent"
           android:layout_height="wrap_content">
@@ -515,11 +516,11 @@
 
           <LinearLayout
               android:layout_width="match_parent"
-              android:layout_height="match_parent">
+              android:layout_height="match_parent"> -->
 
             <!-- Casa Palmera -->
 
-            <androidx.cardview.widget.CardView
+            <!-- <androidx.cardview.widget.CardView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20sp"
@@ -543,7 +544,8 @@
                     android:paddingBottom="25sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="DuplicateIds"/>
 
                 <TextView
                     android:id="@+id/palmeraText"
@@ -556,7 +558,8 @@
                     android:textColor="@color/cardColor"
                     android:textSize="12sp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/palmeraImg" />
+                    app:layout_constraintTop_toBottomOf="@+id/palmeraImg"
+                    tools:ignore="DuplicateIds"/>
 
                 <TextView
                     android:id="@+id/palmeraPrice"
@@ -569,14 +572,15 @@
                     android:textColor="@color/priceColor"
                     android:textSize="12sp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/palmeraText" />
+                    app:layout_constraintTop_toBottomOf="@+id/palmeraText"
+                    tools:ignore="DuplicateIds"/>
 
               </androidx.constraintlayout.widget.ConstraintLayout>
-            </androidx.cardview.widget.CardView>
+            </androidx.cardview.widget.CardView> -->
 
             <!-- Blue Diamond Court -->
 
-            <androidx.cardview.widget.CardView
+           <!-- <androidx.cardview.widget.CardView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20sp"
@@ -600,7 +604,8 @@
                     android:paddingBottom="25sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="DuplicateIds" />
 
                 <TextView
                     android:id="@+id/diamondText"
@@ -613,7 +618,8 @@
                     android:textColor="@color/cardColor"
                     android:textSize="12sp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/diamondImg" />
+                    app:layout_constraintTop_toBottomOf="@+id/diamondImg"
+                    tools:ignore="DuplicateIds"/>
 
                 <TextView
                     android:id="@+id/diamondPrice"
@@ -626,14 +632,15 @@
                     android:textColor="@color/priceColor"
                     android:textSize="12sp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/diamondText" />
+                    app:layout_constraintTop_toBottomOf="@+id/diamondText"
+                    tools:ignore="DuplicateIds" />
 
               </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>
           </LinearLayout>
         </HorizontalScrollView>
 
-      </androidx.constraintlayout.widget.ConstraintLayout>
+      </androidx.constraintlayout.widget.ConstraintLayout> -->
 
 
 

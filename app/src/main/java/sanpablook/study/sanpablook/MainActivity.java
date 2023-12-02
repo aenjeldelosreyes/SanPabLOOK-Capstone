@@ -9,7 +9,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.example.capstone.databinding.ActivityMainBinding;
+import com.study.sanpablook.databinding.ActivityMainBinding;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.study.sanpablook.R;
 
