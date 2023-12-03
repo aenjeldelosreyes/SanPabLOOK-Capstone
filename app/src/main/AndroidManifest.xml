@@ -20,9 +20,6 @@
             android:name="sanpablook.study.sanpablook.HotelPalmeras"
             android:exported="false" />
         <activity
-            android:name=".activity_palmera_hotel"
-            android:exported="false" />
-        <activity
             android:name="sanpablook.study.sanpablook.ViewNotification"
             android:exported="false" />
         <activity
