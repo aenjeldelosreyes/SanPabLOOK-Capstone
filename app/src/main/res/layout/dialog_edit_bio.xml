@@ -37,7 +37,7 @@
                 android:ems="15"
                 android:fontFamily="@font/poppins_regular"
                 android:inputType="textMultiLine"
-                android:maxLength="150"
+                android:maxLength="100"
                 android:maxLines="5"
                 android:paddingTop="20dp"
                 android:text="@string/bio"
