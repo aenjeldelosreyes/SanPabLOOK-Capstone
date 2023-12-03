@@ -21,9 +21,10 @@ public class HotelMain extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hotel);
+        setContentView(R.layout.activity_hotel_main);
 
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
 
         CardView casaCard = (CardView)findViewById(R.id.casaCard);
         casaCard.setOnClickListener(new View.OnClickListener() {

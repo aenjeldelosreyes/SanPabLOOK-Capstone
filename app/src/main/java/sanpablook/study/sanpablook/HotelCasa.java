@@ -3,20 +3,55 @@ package sanpablook.study.sanpablook;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.text.Html;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.study.sanpablook.R;
 
 public class HotelCasa extends AppCompatActivity {
 
+    ImageButton btnShare, backBtn;
 
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_casa);
+        setContentView(R.layout.activity_hotel_casa);
+
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
+        //buttons
+        backBtn= findViewById(R.id.backBtn);
+        btnShare = findViewById(R.id.btnShare);
+
+        //back button
+        backBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
+
+        //share button
+        btnShare.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Intent.ACTION_SEND);
+                intent.setType("text/plain");
+                String Body = "Share this App";
+                String Sub = "http://casa_location.google.com";
+                intent.putExtra(Intent.EXTRA_TEXT, Body);
+                intent.putExtra(Intent.EXTRA_TEXT, Sub);
+                startActivity(Intent.createChooser(intent, "Share using"));
+            }
+        });
+
 
         TextView stayPrice = (TextView) findViewById(R.id.stayPrice);
         String text = "<font color=#1A9AB7>₱ 3,900</font> <font color=#000000>/ night</font>";

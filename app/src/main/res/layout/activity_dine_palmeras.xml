@@ -40,7 +40,7 @@
                     app:layout_constraintHorizontal_bias="1.0"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:shapeAppearanceOverlay="@style/round_corner"
+                    app:shapeAppearanceOverlay="@style/round_corners"
                     app:srcCompat="@drawable/imgpalmeras" />
                 <!--Location Name-->
                 <TextView

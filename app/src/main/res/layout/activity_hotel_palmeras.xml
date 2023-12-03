@@ -40,7 +40,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:shapeAppearanceOverlay="@style/round_corners"
-                    app:srcCompat="@drawable/tahanannimedinghead" />
+                    app:srcCompat="@drawable/palmerashotelimg" />
 
                 <TextView
                     android:id="@+id/casaTxt"
@@ -71,30 +71,17 @@
                     app:srcCompat="@drawable/ic_btn_back" />
 
                 <ImageButton
-                    android:id="@+id/heartBtn"
+                    android:id="@+id/btnShare"
                     android:layout_width="48sp"
                     android:layout_height="48sp"
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="16dp"
+                    android:padding="10sp"
                     android:background="@drawable/round_btn"
                     android:backgroundTint="@color/white"
-                    android:padding="10sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/ic_btn_heart" />
-
-                <ImageButton
-                    android:id="@+id/shareBtn"
-                    android:layout_width="48sp"
-                    android:layout_height="48sp"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginEnd="16dp"
-                    android:background="@drawable/round_btn"
-                    android:backgroundTint="@color/white"
-                    android:padding="10sp"
-                    app:layout_constraintEnd_toStartOf="@+id/heartBtn"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/ic_share_btn" />
+                    app:srcCompat="@drawable/ic_btn_share" />
 
                 <ImageView
                     android:id="@+id/starIc"
