@@ -26,6 +26,9 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.imageview.ShapeableImageView;
 import com.study.sanpablook.R;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class UserSettings extends AppCompatActivity {
 
     //buttons and clickable
@@ -287,23 +290,29 @@ public class UserSettings extends AppCompatActivity {
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         dialog.setContentView(R.layout.dialog_edit_phone_number);
 
-        Button btnSave = dialog.findViewById(R.id.buttonSave);
+        final Button btnSave = dialog.findViewById(R.id.buttonSave);
         Button btnCancel = dialog.findViewById(R.id.buttonCancel);
-        EditText editTextPhoneNumber = dialog.findViewById(R.id.editTextPhoneNumber);
+        final EditText editTextPhoneNumber = dialog.findViewById(R.id.editTextPhoneNumber);
 
         btnSave.setEnabled(false);
         btnSave.setAlpha(0.5f);
 
         editTextPhoneNumber.addTextChangedListener(new TextWatcher() {
             @Override
-            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+            public void beforeTextChanged(CharSequence charSequence, int start, int count, int after) {
                 // Not needed for this case
             }
 
             @Override
-            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-                btnSave.setEnabled(true);
-                btnSave.setAlpha(1.0f);
+            public void onTextChanged(CharSequence charSequence, int start, int before, int count) {
+                if (validateMobile(editTextPhoneNumber.getText().toString())) {
+                    btnSave.setEnabled(true);
+                    btnSave.setAlpha(1.0f);
+                }
+                else {
+                    btnSave.setEnabled(false);
+                    editTextPhoneNumber.setError("Invalid phone number");
+                }
             }
 
             @Override
@@ -437,5 +446,11 @@ public class UserSettings extends AppCompatActivity {
         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         dialog.getWindow().getAttributes().windowAnimations = R.style.DialogAnimation;
         dialog.getWindow().setGravity(Gravity.BOTTOM);
+    }
+
+    boolean validateMobile(String input) {
+        Pattern p = Pattern.compile("[0][9][0-9]{9}");
+        Matcher m = p.matcher(input);
+        return m.matches();
     }
 }
