@@ -20,11 +20,9 @@
             android:name="sanpablook.study.sanpablook.HotelPalmeras"
             android:exported="false" />
         <activity
-            android:name=".activity_palmera_hotel"
-            android:exported="false" />
-        <activity
             android:name="sanpablook.study.sanpablook.ViewNotification"
-            android:exported="false" />
+            android:exported="false"
+            tools:ignore="ExtraText" />
         <activity
             android:name="sanpablook.study.sanpablook.AdminBookingDetails"
             android:exported="false" />
