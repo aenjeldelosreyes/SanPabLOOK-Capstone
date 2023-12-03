@@ -1,13 +1,17 @@
 package sanpablook.study.sanpablook;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.content.res.ColorStateList;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.study.sanpablook.databinding.ActivityMainBinding;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -37,18 +41,37 @@ public class MainActivity extends AppCompatActivity {
 
             if (itemId == R.id.home) {
                 replaceFragment(new HomeFragment());
+                resetFabColors();
             } else if (itemId == R.id.dine) {
                 replaceFragment(new DineFragment());
+                resetFabColors();
             } else if (itemId == R.id.products) {
                 replaceFragment(new ProductsFragment());
+                resetFabColors();
             } else if (itemId == R.id.profile) {
                 replaceFragment(new ProfileFragment());
+                resetFabColors();
             }
 
             return true;
         });
 
+        // FAB Book
+        binding.floatingBook.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                binding.bottomNavigationView.setSelectedItemId(R.id.unclickableBooking);
+                replaceFragment(new BookFragment());
 
+                // Change FAB background & icon color when clicked
+                binding.floatingBook.setBackgroundTintList(
+                        ColorStateList.valueOf(ContextCompat.getColor(MainActivity.this, R.color.blue))
+                );
+                binding.floatingBook.setImageTintList(
+                        ColorStateList.valueOf(ContextCompat.getColor(MainActivity.this, R.color.light))
+                );
+            }
+        });
     }
 
 
@@ -61,4 +84,13 @@ public class MainActivity extends AppCompatActivity {
         ftProfileFragment.commit();
     }
 
+    //FAB reset to initial colors
+    private void resetFabColors() {
+        binding.floatingBook.setBackgroundTintList(
+                ColorStateList.valueOf(ContextCompat.getColor(MainActivity.this, R.color.lightBlue))
+        );
+        binding.floatingBook.setImageTintList(
+                ColorStateList.valueOf(ContextCompat.getColor(MainActivity.this, R.color.blue))
+        );
+    }
 }
