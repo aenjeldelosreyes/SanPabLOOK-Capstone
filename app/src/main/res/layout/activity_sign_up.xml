@@ -1,4 +1,4 @@
-Z<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -6,10 +6,11 @@ Z<?xml version="1.0" encoding="utf-8"?>
     android:layout_height="match_parent"
     tools:context=".signUp">
 
+    <!--wave bg-->
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="394dp"
-        android:layout_height="785dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -19,11 +20,12 @@ Z<?xml version="1.0" encoding="utf-8"?>
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/upwave" />
 
+    <!--rounded right bg-->
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="396dp"
-        android:layout_height="713dp"
-        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -31,28 +33,30 @@ Z<?xml version="1.0" encoding="utf-8"?>
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/sign_bg" />
 
+    <!--Create New Account txt-->
     <TextView
         android:id="@+id/textView2"
         android:layout_width="267dp"
         android:layout_height="100dp"
+        android:layout_marginTop="30dp"
         android:gravity="center"
-        android:text="Create new Account"
+        android:text="@string/create_new_account"
         android:textColor="@color/darkBlue"
-        android:textSize="40dp"
+        android:textSize="40sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.428"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.131" />
+        app:layout_constraintVertical_bias="0.145" />
 
+    <!--already sign txt-->
     <TextView
         android:id="@+id/alreadyBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="Already Registered? Log in here."
+        android:text="@string/already_registered_log_in_here"
         android:textAlignment="center"
         android:textColor="@color/cyan"
         android:textSize="13sp"
@@ -60,21 +64,25 @@ Z<?xml version="1.0" encoding="utf-8"?>
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
+    <!--sign up content-->
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="370dp"
         android:layout_height="413dp"
         android:layout_marginTop="11dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/alreadyBtn">
 
+        <!--first name-->
         <TextView
             android:id="@+id/textViewFirstName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="FIRST NAME"
+            android:text="@string/first_name"
             android:textColor="@color/gray"
             android:textSize="12sp" />
 
@@ -85,18 +93,19 @@ Z<?xml version="1.0" encoding="utf-8"?>
             android:layout_marginTop="5dp"
             android:background="@drawable/log_background"
             android:ems="10"
-            android:hint="Enter First Name"
+            android:hint="@string/enter_first_name"
             android:inputType="text"
             android:padding="16dp"
             android:textColor="@color/onyx"
             android:textSize="14sp" />
 
+        <!--last name-->
         <TextView
             android:id="@+id/textViewLastName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="LAST NAME"
+            android:text="@string/last_name"
             android:textColor="@color/gray"
             android:textSize="12sp" />
 
@@ -107,17 +116,18 @@ Z<?xml version="1.0" encoding="utf-8"?>
             android:layout_marginTop="5dp"
             android:background="@drawable/log_background"
             android:ems="10"
-            android:hint="Enter Last Name"
+            android:hint="@string/enter_last_name"
             android:padding="14dp"
             android:textColor="@color/onyx"
             android:textSize="14sp" />
 
+        <!--email-->
         <TextView
             android:id="@+id/textViewEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="EMAIL"
+            android:text="@string/email"
             android:textColor="@color/gray"
             android:textSize="12sp" />
 
@@ -128,17 +138,18 @@ Z<?xml version="1.0" encoding="utf-8"?>
             android:layout_marginTop="5dp"
             android:background="@drawable/log_background"
             android:ems="10"
-            android:hint="Enter Email"
+            android:hint="@string/enter_email"
             android:padding="14dp"
             android:textColor="@color/onyx"
             android:textSize="14sp" />
 
+        <!--Password-->
         <TextView
             android:id="@+id/textViewSignPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="14dp"
-            android:text="PASSWORD"
+            android:text="@string/password"
             android:textColor="@color/gray"
             android:textSize="12sp" />
 
@@ -149,18 +160,19 @@ Z<?xml version="1.0" encoding="utf-8"?>
             android:layout_marginTop="5dp"
             android:background="@drawable/log_background"
             android:ems="10"
-            android:hint="Enter Password"
+            android:hint="@string/enter_password"
             android:inputType="textPassword"
             android:padding="14dp"
             android:textColor="@color/onyx"
             android:textSize="14sp" />
 
+        <!--date of birth-->
         <TextView
             android:id="@+id/textViewBirthdate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="14dp"
-            android:text="DATE OF BIRTH"
+            android:text="@string/date_of_birth"
             android:textColor="@color/gray"
             android:textSize="12sp" />
 
@@ -171,7 +183,7 @@ Z<?xml version="1.0" encoding="utf-8"?>
             android:layout_height="50dp"
             android:layout_marginTop="5dp"
             android:background="@drawable/log_background"
-            android:hint="Select Date"
+            android:hint="@string/select_date"
             android:onClick="openDatePicker"
             android:textColor="@color/onyx"
             android:textSize="14sp"
@@ -181,18 +193,21 @@ Z<?xml version="1.0" encoding="utf-8"?>
 
     </LinearLayout>
 
+    <!--reminder to make sure-->
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Make sure that your first name and last name reflect on your Valid ID."
+        android:text="@string/make_sure_that_your_first_name_and_last_name_reflect_on_your_valid_id"
         android:textSize="10sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:ignore="SmallSp" />
 
+    <!--Sign Up button-->
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/signBtn"
         style="@android:style/Widget.Button"
@@ -200,7 +215,7 @@ Z<?xml version="1.0" encoding="utf-8"?>
         android:layout_height="50dp"
         android:layout_marginTop="11dp"
         android:background="@drawable/login_btn_bg"
-        android:text="Sign Up"
+        android:text="@string/sign_up"
         android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
@@ -208,7 +223,7 @@ Z<?xml version="1.0" encoding="utf-8"?>
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6"
-        app:layout_constraintVertical_bias="0.147" />
+        app:layout_constraintVertical_bias="0.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

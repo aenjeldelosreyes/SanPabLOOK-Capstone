@@ -26,6 +26,7 @@ public class signUp extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
 
+        //Sign Up back to LogIn
         textView=(TextView) findViewById(R.id.alreadyBtn);
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -37,9 +38,25 @@ public class signUp extends AppCompatActivity {
         });
 
 
+        //Sign Up back to LogIn button
+        View button = findViewById(R.id.signBtn);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent= new Intent(signUp.this, MainActivity.class);
+                startActivity(intent);
+
+                Toast.makeText(signUp.this, "Successfully Sign Up", Toast.LENGTH_SHORT).show();
+                finish();
+            }
+        });
+
+
+        //Date of Birth Picker
         initDatePicker();
         dateButton = findViewById(R.id.datePickerButton);
         dateButton.setText(getTodaysDate());
+        return;
     }
 
     private String getTodaysDate()
@@ -112,6 +129,8 @@ public class signUp extends AppCompatActivity {
                 datePickerDialog.show();
             }
         };
+
+
 
 
 

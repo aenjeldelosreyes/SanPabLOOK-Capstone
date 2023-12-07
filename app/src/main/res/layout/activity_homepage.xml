@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="1sp"
+    tools:layout_editor_absoluteY="1sp"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--tara phil-->
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="253dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="36dp"
+            android:text="@string/tara_phil"
+            android:textColor="@color/aqua"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.101"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--notif-->
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="40dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="44dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.637"
+            app:layout_constraintStart_toEndOf="@+id/textView3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/notif_btn" />
+
+        <!--carousel-->
+        <org.imaginativeworld.whynotimagecarousel.ImageCarousel
+            android:id="@+id/carousel"
+            android:layout_width="377dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="28dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <!--nature-->
+        <EditText
+            android:id="@+id/searchBar"
+            android:layout_width="365dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/search_bar_bg"
+            android:drawableStart="@drawable/ic_search"
+            android:ems="10"
+            android:hint="@string/tara_na_san_tayo"
+            android:inputType="text"
+            android:padding="14sp"
+            android:textColor="@color/black"
+            android:textColorHint="#BDBDBD"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/carousel" />
+
+        <ImageButton
+            android:id="@+id/nature_btn"
+            android:layout_width="90dp"
+            android:layout_height="67dp"
+            android:layout_marginTop="12dp"
+            android:background="@null"
+            android:scaleType="centerInside"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.049"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/searchBar"
+            app:srcCompat="@drawable/nature" />
+
+        <!--products-->
+
+
+        <!--hotels-->
+
+        <TextView
+            android:id="@+id/textNature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Nature"
+            android:textColor="@color/cyan"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.098"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nature_btn" />
+
+
+        <ImageButton
+            android:id="@+id/products_btn"
+            android:layout_width="90dp"
+            android:layout_height="67dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:background="@null"
+            android:scaleType="centerInside"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/nature_btn"
+            app:layout_constraintTop_toBottomOf="@+id/searchBar"
+            app:srcCompat="@drawable/products" />
+
+        <!--activities-->
+        <TextView
+            android:id="@+id/textProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Products"
+            android:textColor="@color/cyan"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.17"
+            app:layout_constraintStart_toEndOf="@+id/textNature"
+            app:layout_constraintTop_toBottomOf="@+id/products_btn"
+            tools:ignore="HardcodedText" />
+
+        <!--hotels-->
+        <ImageButton
+            android:id="@+id/hotels_btn"
+            android:layout_width="90dp"
+            android:layout_height="67dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:background="@null"
+            android:scaleType="centerInside"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/products_btn"
+            app:layout_constraintTop_toBottomOf="@+id/searchBar"
+            app:srcCompat="@drawable/hotels" />
+
+        <TextView
+            android:id="@+id/textHotels"
+            android:layout_width="47dp"
+            android:layout_height="21dp"
+            android:layout_marginTop="8dp"
+            android:text="Hotels"
+            android:textColor="@color/cyan"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.259"
+            app:layout_constraintStart_toEndOf="@+id/textProduct"
+            app:layout_constraintTop_toBottomOf="@+id/hotels_btn"
+            tools:ignore="HardcodedText" />
+
+        <!--activities-->
+        <ImageButton
+            android:id="@+id/activities_btn"
+            android:layout_width="90dp"
+            android:layout_height="67dp"
+            android:layout_marginTop="12dp"
+            android:background="@null"
+            android:scaleType="centerInside"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.2"
+            app:layout_constraintStart_toEndOf="@+id/hotels_btn"
+            app:layout_constraintTop_toBottomOf="@+id/searchBar"
+            app:srcCompat="@drawable/activities" />
+
+        <TextView
+            android:id="@+id/textActivities"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Activities"
+            android:textColor="@color/cyan"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toEndOf="@+id/textHotels"
+            app:layout_constraintTop_toBottomOf="@+id/activities_btn"
+            tools:ignore="HardcodedText" />
+
+        <!--google maps-->
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/maps"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="339dp"
+            android:layout_height="305dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="30sp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textProduct"
+            app:layout_constraintVertical_bias="0.0">
+        </androidx.fragment.app.FragmentContainerView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
