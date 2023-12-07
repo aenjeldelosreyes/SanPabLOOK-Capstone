@@ -1,7 +1,11 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
+<<<<<<< HEAD
+    <style name="Base.Theme.SanPabLOOK" parent="Theme.Material3.DayNight.NoActionBar">
+=======
     <style name="Base.Theme.Capstone" parent="Theme.AppCompat.Light.NoActionBar">
 
+>>>>>>> a6d646b59fe995455a4c3941f87394ba10dc3a58
         <!-- Customize your dark theme here. -->
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
     </style>
