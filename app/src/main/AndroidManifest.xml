@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+<<<<<<< HEAD
 
     <uses-permission android:name="android.permission.INTERNET" />
+=======
+    <!-- Camera -->
+    <uses-feature android:name="android.hardware.camera.any" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+>>>>>>> a6d646b59fe995455a4c3941f87394ba10dc3a58
 
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
+<<<<<<< HEAD
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
@@ -35,6 +43,56 @@
             android:name=".MainActivity"
             android:exported="true"
             android:screenOrientation="portrait">
+=======
+        android:label="@string/appName"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Capstone"
+        tools:targetApi="31">
+        <activity
+            android:name="sanpablook.study.sanpablook.HotelPalmeras"
+            android:exported="false" />
+        <activity
+            android:name="sanpablook.study.sanpablook.ViewNotification"
+            android:exported="false"
+            tools:ignore="ExtraText" />
+        <activity
+            android:name="sanpablook.study.sanpablook.AdminBookingDetails"
+            android:exported="false" />
+        <activity
+            android:name="sanpablook.study.sanpablook.AdminMenu"
+            android:exported="false" />
+        <activity
+            android:name="sanpablook.study.sanpablook.AdminDashboard"
+            android:exported="false" />
+        <activity
+            android:name="sanpablook.study.sanpablook.DineCasaActivity"
+            android:exported="false" />
+        <activity
+            android:name="sanpablook.study.sanpablook.DineSulyapActivity"
+            android:exported="false" />
+        <activity
+            android:name="sanpablook.study.sanpablook.DinePalmerasReservationActivity"
+            android:exported="false" />
+        <activity
+            android:name="sanpablook.study.sanpablook.DinePalmerasActivity"
+            android:exported="false" />
+        <activity
+            android:name="sanpablook.study.sanpablook.UserNotifications"
+            android:exported="false" />
+        <activity
+            android:name="sanpablook.study.sanpablook.ActivityHistory"
+            android:exported="false" />
+        <activity
+            android:name="sanpablook.study.sanpablook.UserSettings"
+            android:exported="false" />
+        <activity
+            android:name="sanpablook.study.sanpablook.MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+
+            <!-- no rotation -->
+>>>>>>> a6d646b59fe995455a4c3941f87394ba10dc3a58
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
