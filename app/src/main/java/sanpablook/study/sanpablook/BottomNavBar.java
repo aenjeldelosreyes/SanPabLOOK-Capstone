@@ -8,7 +8,6 @@ import androidx.fragment.app.FragmentTransaction;
 
 import android.content.res.ColorStateList;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -17,7 +16,7 @@ import com.study.sanpablook.databinding.ActivityMainBinding;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.study.sanpablook.R;
 
-public class MainActivity extends AppCompatActivity {
+public class BottomNavBar extends AppCompatActivity {
 
     ActivityMainBinding binding;
 
@@ -65,10 +64,10 @@ public class MainActivity extends AppCompatActivity {
 
                 // Change FAB background & icon color when clicked
                 binding.floatingBook.setBackgroundTintList(
-                        ColorStateList.valueOf(ContextCompat.getColor(MainActivity.this, R.color.blue))
+                        ColorStateList.valueOf(ContextCompat.getColor(BottomNavBar.this, R.color.blue))
                 );
                 binding.floatingBook.setImageTintList(
-                        ColorStateList.valueOf(ContextCompat.getColor(MainActivity.this, R.color.light))
+                        ColorStateList.valueOf(ContextCompat.getColor(BottomNavBar.this, R.color.light))
                 );
             }
         });
@@ -87,10 +86,10 @@ public class MainActivity extends AppCompatActivity {
     //FAB reset to initial colors
     private void resetFabColors() {
         binding.floatingBook.setBackgroundTintList(
-                ColorStateList.valueOf(ContextCompat.getColor(MainActivity.this, R.color.lightBlue))
+                ColorStateList.valueOf(ContextCompat.getColor(BottomNavBar.this, R.color.lightBlue))
         );
         binding.floatingBook.setImageTintList(
-                ColorStateList.valueOf(ContextCompat.getColor(MainActivity.this, R.color.blue))
+                ColorStateList.valueOf(ContextCompat.getColor(BottomNavBar.this, R.color.blue))
         );
     }
 }

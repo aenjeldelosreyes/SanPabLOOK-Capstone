@@ -54,7 +54,7 @@
             android:name="sanpablook.study.sanpablook.UserSettings"
             android:exported="false" />
         <activity
-            android:name="sanpablook.study.sanpablook.MainActivity"
+            android:name="sanpablook.study.sanpablook.BottomNavBar"
             android:exported="true"
             android:screenOrientation="portrait">
 
