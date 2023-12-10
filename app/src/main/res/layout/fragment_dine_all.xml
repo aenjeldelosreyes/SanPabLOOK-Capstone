@@ -4,14 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true">
+    android:fillViewport="true"
+    android:background="@color/white">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingTop="10dp"
         tools:context="sanpablook.study.sanpablook.DineAllFragment">
 
-<!--HOT DEALS SECTION-->
+        <!--HOT DEALS SECTION-->
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/hotDealsConstraint"
             android:layout_width="match_parent"
@@ -26,7 +28,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20sp"
-                android:fontFamily="@font/poppins_extra_bold"
+                android:fontFamily="@font/poppins_bold"
                 android:text="@string/deal"
                 android:textColor="@color/blueText"
                 android:textSize="20sp"
@@ -58,8 +60,8 @@
                         android:layout_marginRight="10sp"
                         android:layout_marginBottom="10sp"
                         android:backgroundTint="@color/white"
-                        android:foreground="@drawable/cardview_effect"
                         android:clickable="true"
+                        android:foreground="@drawable/cardview_effect"
                         app:cardCornerRadius="15sp">
 
                         <com.google.android.material.imageview.ShapeableImageView
@@ -94,8 +96,8 @@
                         android:layout_marginRight="10sp"
                         android:layout_marginBottom="10sp"
                         android:backgroundTint="@color/white"
-                        android:foreground="@drawable/cardview_effect"
                         android:clickable="true"
+                        android:foreground="@drawable/cardview_effect"
                         app:cardCornerRadius="15sp">
 
                         <com.google.android.material.imageview.ShapeableImageView
@@ -130,8 +132,8 @@
                         android:layout_marginRight="20sp"
                         android:layout_marginBottom="10sp"
                         android:backgroundTint="@color/white"
-                        android:foreground="@drawable/cardview_effect"
                         android:clickable="true"
+                        android:foreground="@drawable/cardview_effect"
                         app:cardCornerRadius="15sp">
 
                         <com.google.android.material.imageview.ShapeableImageView
@@ -163,7 +165,7 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-<!--POPULAR SECTION-->
+        <!--POPULAR SECTION-->
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/mostPopularConstraint"
             android:layout_width="match_parent"
@@ -179,7 +181,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="12dp"
-                android:fontFamily="@font/poppins_extra_bold"
+                android:fontFamily="@font/poppins_bold"
                 android:text="@string/popular"
                 android:textColor="@color/blueText"
                 android:textSize="20sp"
@@ -208,8 +210,8 @@
                         android:layout_marginRight="10sp"
                         android:layout_marginBottom="10sp"
                         android:backgroundTint="@color/white"
-                        android:foreground="@drawable/cardview_effect"
                         android:clickable="true"
+                        android:foreground="@drawable/cardview_effect"
                         app:cardCornerRadius="15sp">
 
                         <com.google.android.material.imageview.ShapeableImageView
@@ -244,8 +246,8 @@
                         android:layout_marginRight="10sp"
                         android:layout_marginBottom="10sp"
                         android:backgroundTint="@color/white"
-                        android:foreground="@drawable/cardview_effect"
                         android:clickable="true"
+                        android:foreground="@drawable/cardview_effect"
                         app:cardCornerRadius="15sp">
 
                         <com.google.android.material.imageview.ShapeableImageView
@@ -280,8 +282,8 @@
                         android:layout_marginRight="20sp"
                         android:layout_marginBottom="10sp"
                         android:backgroundTint="@color/white"
-                        android:foreground="@drawable/cardview_effect"
                         android:clickable="true"
+                        android:foreground="@drawable/cardview_effect"
                         app:cardCornerRadius="15sp">
 
                         <com.google.android.material.imageview.ShapeableImageView
@@ -313,7 +315,7 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-<!--PREFERRED SECTION-->
+        <!--PREFERRED SECTION-->
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/mostPreferredConstraint"
             android:layout_width="match_parent"
@@ -329,7 +331,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20sp"
                 android:layout_marginTop="16sp"
-                android:fontFamily="@font/poppins_extra_bold"
+                android:fontFamily="@font/poppins_bold"
                 android:text="@string/prefer"
                 android:textColor="@color/blueText"
                 android:textSize="20sp"
@@ -358,8 +360,8 @@
                         android:layout_marginRight="10sp"
                         android:layout_marginBottom="10sp"
                         android:backgroundTint="@color/white"
-                        android:foreground="@drawable/cardview_effect"
                         android:clickable="true"
+                        android:foreground="@drawable/cardview_effect"
                         app:cardCornerRadius="15sp">
 
                         <com.google.android.material.imageview.ShapeableImageView
@@ -394,8 +396,8 @@
                         android:layout_marginRight="10sp"
                         android:layout_marginBottom="10sp"
                         android:backgroundTint="@color/white"
-                        android:foreground="@drawable/cardview_effect"
                         android:clickable="true"
+                        android:foreground="@drawable/cardview_effect"
                         app:cardCornerRadius="15sp">
 
                         <com.google.android.material.imageview.ShapeableImageView
@@ -430,8 +432,8 @@
                         android:layout_marginRight="20sp"
                         android:layout_marginBottom="10sp"
                         android:backgroundTint="@color/white"
-                        android:foreground="@drawable/cardview_effect"
                         android:clickable="true"
+                        android:foreground="@drawable/cardview_effect"
                         app:cardCornerRadius="15sp">
 
                         <com.google.android.material.imageview.ShapeableImageView

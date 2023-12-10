@@ -18,6 +18,13 @@
     <style name = "review">
         <item name = "cornerSize">10%</item>
     </style>
+
+<!--TAB LAYOUT TEXT SIZE-->
+    <style name="CustomTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">12sp</item> <!-- Change 16 to your desired text size -->
+        <item name="android:textColor">@android:color/darker_gray</item> <!-- Change color as needed -->
+    </style>
+
 </resources>
 
 <!-- Hello -->

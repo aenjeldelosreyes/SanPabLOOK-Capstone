@@ -12,6 +12,8 @@ import android.widget.DatePicker;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.study.sanpablook.R;
+
 import java.util.Calendar;
 
 public class SignUpActivity extends AppCompatActivity {

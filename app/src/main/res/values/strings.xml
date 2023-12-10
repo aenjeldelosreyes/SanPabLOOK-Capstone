@@ -1,13 +1,11 @@
 <resources>
     <string name="app_name">SanPabLOOK</string>
-<<<<<<< HEAD
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    //homepage
     <string name="sampaloc_lake">Sampaloc Lake</string>
     <string name="tara_phil">Tara, Phil!</string>
     <string name="tara_na_san_tayo">Tara na! San Tayo?</string>
     <string name="_4_8">4.8</string>
-    <string name="location">Location</string>
     <string name="sampalok_lake_san_pablo_laguna">Sampalok Lake, San Pablo, Laguna</string>
     <string name="_12_345_reviews">(12,345 reviews)</string>
     <string name="quick_tutorial">Quick Tutorial</string>
@@ -20,9 +18,9 @@
     <string name="enter_first_name">Enter First Name</string>
     <string name="last_name">LAST NAME</string>
     <string name="enter_last_name">Enter Last Name</string>
-    <string name="email">EMAIL</string>
+    <string name="email_caps">EMAIL</string>
     <string name="enter_email">Enter Email</string>
-    <string name="password">PASSWORD</string>
+    <string name="password_caps">PASSWORD</string>
     <string name="enter_password">Enter Password</string>
     <string name="date_of_birth">DATE OF BIRTH</string>
     <string name="select_date">Select Date</string>
@@ -33,7 +31,6 @@
     <string name="calibato_lake">Calibato Lake</string>
     <string name="palakpakin_lake">Palakpakin Lake</string>
     <string name="nature">Nature</string>
-=======
 
     <!-- Hotel Selects -->
     <string name="hotelSelects">HOTEL</string>
@@ -345,5 +342,4 @@
         <item>10</item>
     </string-array>
 
->>>>>>> a6d646b59fe995455a4c3941f87394ba10dc3a58
 </resources>

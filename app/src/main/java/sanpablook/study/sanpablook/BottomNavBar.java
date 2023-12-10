@@ -12,18 +12,19 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.study.sanpablook.databinding.ActivityMainBinding;
+import com.study.sanpablook.databinding.ActivityBottomNavBinding;
+import com.study.sanpablook.databinding.ActivityBottomNavBinding;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.study.sanpablook.R;
 
 public class BottomNavBar extends AppCompatActivity {
 
-    ActivityMainBinding binding;
+    ActivityBottomNavBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityMainBinding.inflate(getLayoutInflater());
+        binding = ActivityBottomNavBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         replaceFragment(new HomeFragment());
 
@@ -55,12 +56,12 @@ public class BottomNavBar extends AppCompatActivity {
             return true;
         });
 
-        // FAB Book
+        // FAB Booking for Hotel
         binding.floatingBook.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 binding.bottomNavigationView.setSelectedItemId(R.id.unclickableBooking);
-                replaceFragment(new BookFragment());
+                replaceFragment(new HotelFragment());
 
                 // Change FAB background & icon color when clicked
                 binding.floatingBook.setBackgroundTintList(
