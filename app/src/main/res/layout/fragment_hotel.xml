@@ -101,16 +101,16 @@
                 <com.google.android.material.appbar.AppBarLayout
                     android:id="@+id/appBarLayout"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    >
 
                     <com.google.android.material.tabs.TabLayout
                         android:id="@+id/tabLayout"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
-                        android:layout_marginLeft="2dp"
                         android:background="@drawable/rounded_corner_top_left"
-                        app:tabMode="scrollable"/>
+                        app:tabTextAppearance="@style/CustomTabTextAppearance"/>
 
                 </com.google.android.material.appbar.AppBarLayout>
 

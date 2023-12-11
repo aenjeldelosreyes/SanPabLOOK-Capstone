@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.study.sanpablook.R;
+
 public class SignInActivity extends AppCompatActivity {
 
     private Button button;
@@ -17,7 +19,7 @@ public class SignInActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_sign_in);
 
         //log in page to homepage
         button =findViewById(R.id.loginBtn);

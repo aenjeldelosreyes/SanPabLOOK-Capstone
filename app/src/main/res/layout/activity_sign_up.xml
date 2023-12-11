@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".signUp">
+    tools:context="sanpablook.study.sanpablook.SignUpActivity">
 
     <!--wave bg-->
     <ImageView
@@ -58,7 +58,7 @@
         android:layout_marginTop="8dp"
         android:text="@string/already_registered_log_in_here"
         android:textAlignment="center"
-        android:textColor="@color/cyan"
+        android:textColor="@color/selectedText"
         android:textSize="13sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -127,7 +127,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="@string/email"
+            android:text="@string/email_caps"
             android:textColor="@color/gray"
             android:textSize="12sp" />
 
@@ -149,7 +149,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="14dp"
-            android:text="@string/password"
+            android:text="@string/password_caps"
             android:textColor="@color/gray"
             android:textSize="12sp" />
 

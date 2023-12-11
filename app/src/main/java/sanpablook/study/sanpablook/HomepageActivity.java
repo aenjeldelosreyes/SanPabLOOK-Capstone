@@ -16,6 +16,7 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.study.sanpablook.R;
 
 import org.imaginativeworld.whynotimagecarousel.ImageCarousel;
 import org.imaginativeworld.whynotimagecarousel.model.CarouselItem;
