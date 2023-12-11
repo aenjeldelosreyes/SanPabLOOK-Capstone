@@ -1,5 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
+
     <style name="Base.Theme.Capstone" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="colorPrimary">@color/blue</item>
         <item name="colorPrimaryDark">@color/blue</item>
@@ -13,4 +14,5 @@
         <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
     </style>
 
+>>>>>>> a6d646b59fe995455a4c3941f87394ba10dc3a58
 </resources>

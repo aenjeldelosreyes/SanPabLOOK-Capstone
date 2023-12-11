@@ -1,6 +1,44 @@
 <resources>
     <string name="app_name">SanPabLOOK</string>
 
+    //homepage
+    <string name="sampaloc_lake">Sampaloc Lake</string>
+    <string name="tara_phil">Tara, Phil!</string>
+    <string name="tara_na_san_tayo">Tara na! San Tayo?</string>
+    <string name="_4_8">4.8</string>
+    <string name="sampalok_lake_san_pablo_laguna">Sampalok Lake, San Pablo, Laguna</string>
+    <string name="_12_345_reviews">(12,345 reviews)</string>
+    <string name="quick_tutorial">Quick Tutorial</string>
+    <string name="todo">TODO</string>
+    <string name="mohicap">TODO</string>
+    <string name="yambo_pandin_lake">Yambo-Pandin Lake</string>
+    <string name="create_new_account">Create new Account</string>
+    <string name="already_registered_log_in_here">Already Registered? Log in here.</string>
+    <string name="first_name">FIRST NAME</string>
+    <string name="enter_first_name">Enter First Name</string>
+    <string name="last_name">LAST NAME</string>
+    <string name="enter_last_name">Enter Last Name</string>
+    <string name="email_caps">EMAIL</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="password_caps">PASSWORD</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="date_of_birth">DATE OF BIRTH</string>
+    <string name="select_date">Select Date</string>
+    <string name="make_sure_that_your_first_name_and_last_name_reflect_on_your_valid_id">Make sure that your first name and last name reflect on your Valid ID.</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="san_pablo_city_laguna">San Pablo City, Laguna</string>
+    <string name="mohicap_lake">Mohicap Lake</string>
+    <string name="calibato_lake">Calibato Lake</string>
+    <string name="palakpakin_lake">Palakpakin Lake</string>
+    <string name="nature">Nature</string>
+
+    <!-- Hotel Selects -->
+    <string name="hotelSelects">HOTEL</string>
+    <string name="resortSelects">RESORT</string>
+    <string name="bnbSelects">BNB</string>
+    <string name="motelSelects">MOTEL</string>
+    <string name="innSelects">INN</string>
+
     <!-- Hotel Main -->
     <string name="userLocation">18D Werner Schetelig Ave</string>
     <string name="hotel">Hotel</string>
@@ -62,6 +100,27 @@
         \n2 guests maximum</string>
     <string name="medingAvailable">Always open</string>
     <string name="appName">San PabLOOK</string>
+
+    <!-- Palmeras Hotel -->
+    <string name="palmerasHotel">Casa Palmeras Hotel</string>
+    <string name="palmerasHotelLocation">Purok 3 Barangay, San Nicolas, San Pablo, Laguna, 4000</string>
+    <string name="aboutPalmerasHotel">Casa Palmeras Hotel is located in San Pablo. The Lifestyle Strip and The Outlets at Lipa are worth checking out if shopping is on the agenda, while those wishing to experience the area\'s natural beauty can explore Sampaloc Lake and Lake Bunot.</string>
+    <string name="palmerasHotelProfileInfo">Take advantage of a garden, an arcade/game room, and dry cleaning/laundry services at Casa Palmeras Hotel. The onsite local and international cuisine restaurant features light fare. Stay connected with free WiFi in public areas, and guests can find other amenities such as a gym and a conference center.</string>
+    <string name="houserulesinfoPalmeras">Check in : 2:00 PM
+        \nCheck-out: 12:00 NN
+        \nMinimum check-in age: 18
+        \nPets not allowed</string>
+
+    <!-- Blue Diamond Court Hotel -->
+    <string name="blueDiamondotel">Blue Diamond Court</string>
+    <string name="diamondHotelLocation">P379W+3R2, Pan-Philippine Hwy, San Pablo City, 4000 Laguna</string>
+    <string name="aboutdiamondHotel">Casa Palmeras Hotel is located in San Pablo. The Lifestyle Strip and The Outlets at Lipa are worth checking out if shopping is on the agenda, while those wishing to experience the area\'s natural beauty can explore Sampaloc Lake and Lake Bunot.</string>
+    <string name="diamondHotelProfileInfo">Take advantage of a garden, an arcade/game room, and dry cleaning/laundry services at Casa Palmeras Hotel. The onsite local and international cuisine restaurant features light fare. Stay connected with free WiFi in public areas, and guests can find other amenities such as a gym and a conference center.</string>
+    <string name="houserulesinfoDiamond">Check in : 2:00 PM
+        \nCheck-out: 12:00 NN
+        \nMinimum check-in age: 18
+        \nPets not allowed</string>
+
 
     <!--NAVIGATION-->
     <string name="home">Home</string>

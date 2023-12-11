@@ -4,10 +4,10 @@ plugins {
 
 android {
     namespace = "com.study.sanpablook"
-    compileSdk = 34
+    compileSdk = 33
 
     defaultConfig {
-        applicationId = "com.study.sanpablook"
+        applicationId = "sanpablook.study.sanpablook"
         minSdk = 26
         targetSdk = 33
         versionCode = 1
@@ -45,6 +45,9 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     implementation ("androidx.navigation:navigation-fragment-ktx:2.3.5")
     implementation ("androidx.navigation:navigation-ui-ktx:2.3.5")
+    implementation ("com.google.android.gms:play-services-maps:18.2.0")
+    implementation ("org.imaginativeworld.whynotimagecarousel:whynotimagecarousel:2.1.0")
+    implementation ("me.relex:circleindicator:2.1.6")
 
     //camera and gallery
     implementation ("com.github.dhaval2404:imagepicker:2.1")

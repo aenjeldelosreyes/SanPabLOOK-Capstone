@@ -3,6 +3,10 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
+    //trisha
+    <color name="onyx">#353935</color>
+
+
     <color name="background">#2CA1BF</color>
     <color name="rectangle_color">#FFFEFE</color>
     <color name="selectedText">#2CA1BF</color>
@@ -38,5 +42,6 @@
     <color name="gray">#BDBDBD</color>
     <color name="darkGray">#8A8A8A</color>
     <color name="transparent">#00FFFFFF</color>
+
 
 </resources>

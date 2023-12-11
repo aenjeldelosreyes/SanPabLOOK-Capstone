@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="1sp"
+    tools:layout_editor_absoluteY="1sp"
+    android:scrollbars="none"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp">
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/sampaloc_pic"
+            android:layout_width="match_parent"
+            android:layout_height="378sp"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/sampaloc_lake" />
+
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/sampaloc_lake"
+            android:textColor="@color/black"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.144"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sampaloc_pic" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/_4_8"
+            android:textColor="@color/aqua"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.072"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="120dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="16dp"
+            android:background="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/textView9"
+            app:layout_constraintTop_toBottomOf="@+id/textView8"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/star_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/rate_star"
+                tools:layout_editor_absoluteX="80dp"
+                tools:layout_editor_absoluteY="463dp" />
+
+            <ImageView
+                android:id="@+id/star_rate2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/rate_star"
+                tools:layout_editor_absoluteX="164dp"
+                tools:layout_editor_absoluteY="463dp" />
+
+            <ImageView
+                android:id="@+id/star_rate3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/rate_star"
+                tools:layout_editor_absoluteX="80dp"
+                tools:layout_editor_absoluteY="463dp" />
+
+            <ImageView
+                android:id="@+id/star_rate4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/rate_star"
+                tools:layout_editor_absoluteX="164dp"
+                tools:layout_editor_absoluteY="463dp" />
+
+            <ImageView
+                android:id="@+id/star_rate5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/rate_star_half"
+                tools:layout_editor_absoluteX="164dp"
+                tools:layout_editor_absoluteY="463dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/_12_345_reviews"
+            android:textColor="@color/gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/linearLayout2"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/location"
+            android:textColor="@color/gray"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.076"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="34dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.087"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/location"
+            app:srcCompat="@drawable/baseline_location" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="296dp"
+            android:layout_height="21dp"
+            android:layout_marginTop="16dp"
+            android:text="Sampalok Lake, San Pablo, Laguna"
+            android:textColor="@color/darkBlue"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.061"
+            app:layout_constraintStart_toEndOf="@+id/imageView4"
+            app:layout_constraintTop_toBottomOf="@+id/location" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Description"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.097"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="363dp"
+            android:layout_height="77dp"
+            android:layout_marginTop="8dp"
+            android:justificationMode="inter_word"
+            android:text="Lorem ipsum dolor sit amet consectetur. Ultrices placerat nec mauris felis urna adipiscing. Ridiculus rhoncus libero nibh sed sit in. "
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.625"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quick_tutorial"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.105"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="363dp"
+            android:layout_height="77dp"
+            android:layout_marginTop="4dp"
+            android:justificationMode="inter_word"
+            android:text="Lorem ipsum dolor sit amet consectetur. Ultrices placerat nec mauris felis urna adipiscing. Ridiculus rhoncus libero nibh sed sit in. "
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.625"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+        <Button
+            android:id="@+id/buttonYt"
+            android:layout_width="359dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="12dp"
+            android:text="Learn More"
+            android:backgroundTint="@color/selectedText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
