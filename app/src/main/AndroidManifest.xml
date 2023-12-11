@@ -23,6 +23,12 @@
             android:name="sanpablook.study.sanpablook.HotelPalmeras"
             android:exported="false" />
         <activity
+            android:name="sanpablook.study.sanpablook.HotelCasa"
+            android:exported="false" />
+        <activity
+            android:name="sanpablook.study.sanpablook.HotelMeding"
+            android:exported="false" />
+        <activity
             android:name="sanpablook.study.sanpablook.ViewNotification"
             android:exported="false"
             tools:ignore="ExtraText" />
