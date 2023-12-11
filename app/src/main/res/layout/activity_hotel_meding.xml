@@ -122,6 +122,7 @@
                     android:layout_marginStart="2sp"
                     android:fontFamily="@font/poppins_light"
                     android:text="@string/mockReview"
+                    android:textColor="#141414"
                     android:textSize="14sp"
                     app:layout_constraintStart_toEndOf="@+id/likeIcon"
                     app:layout_constraintTop_toBottomOf="@+id/casaTxt" />
@@ -143,6 +144,7 @@
                     android:layout_marginStart="2sp"
                     android:fontFamily="@font/poppins_light"
                     android:text="@string/accredited"
+                    android:textColor="#141414"
                     android:textSize="14sp"
                     app:layout_constraintStart_toEndOf="@+id/accreditedIcon"
                     app:layout_constraintTop_toBottomOf="@+id/casaTxt" />
@@ -155,6 +157,7 @@
                     android:layout_marginTop="16dp"
                     android:fontFamily="@font/poppins_light"
                     android:text="@string/medingLocation"
+                    android:textColor="#141414"
                     android:textSize="14sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/starIc" />
@@ -178,6 +181,7 @@
                     android:fontFamily="@font/poppins_light"
                     android:text="@string/about"
                     android:textSize="20sp"
+                    android:textColor="#141414"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/line" />
 
@@ -193,6 +197,7 @@
                     android:text="@string/aboutMeding"
                     android:textAlignment="viewStart"
                     android:textSize="14sp"
+                    android:textColor="#141414"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/About" />
@@ -214,7 +219,7 @@
                     android:layout_marginStart="24dp"
                     android:layout_marginTop="7dp"
                     android:fontFamily="@font/poppins_light"
-                    android:text="@string/yourHost"
+                    android:textColor="#141414"
                     android:textSize="20sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/line2" />
@@ -315,6 +320,7 @@
                     android:justificationMode="inter_word"
                     android:text="@string/medingProfileInfo"
                     android:textAlignment="viewStart"
+                    android:textColor="@color/black"
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -353,6 +359,7 @@
                     android:layout_marginTop="7dp"
                     android:fontFamily="@font/poppins_regular"
                     android:text="@string/offers"
+                    android:textColor="#141414"
                     android:textSize="20sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/line3" />
@@ -548,6 +555,7 @@
                     android:layout_marginTop="7dp"
                     android:fontFamily="@font/poppins_regular"
                     android:text="@string/stayRest"
+                    android:textColor="#141414"
                     android:textSize="20sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/line4" />
@@ -560,6 +568,7 @@
                     android:layout_marginTop="2sp"
                     android:fontFamily="@font/poppins_light"
                     android:text="@string/medingLocation"
+                    android:textColor="@color/hintColor"
                     android:textSize="14sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/stayResting" />
@@ -631,6 +640,7 @@
                     android:layout_marginStart="3sp"
                     android:fontFamily="@font/poppins_light"
                     android:text="@string/mockReview"
+                    android:textColor="#141414"
                     android:textSize="14sp"
                     app:layout_constraintStart_toEndOf="@+id/icLike2"
                     app:layout_constraintTop_toTopOf="parent" />

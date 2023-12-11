@@ -58,10 +58,10 @@ public class HotelFragment extends Fragment {
     private void setUpViewPager(ViewPager viewPager) {
         SectionPagerAdapter adapter = new SectionPagerAdapter(getChildFragmentManager());
         adapter.addFragment(new HotelAllFragment(), "All");
-        adapter.addFragment(new DineCafeFragment(), "Hotel");
-        adapter.addFragment(new DineAlfrescoFragment(), "Resort");
-        adapter.addFragment(new DineAlfrescoFragment(), "Motel");
-        adapter.addFragment(new DineAlfrescoFragment(), "Inn");
+        adapter.addFragment(new HotelHotelFragment(), "Hotel");
+        adapter.addFragment(new HotelResortFragment(), "Resort");
+        adapter.addFragment(new HotelResortFragment(), "Motel");
+        adapter.addFragment(new HotelResortFragment(), "Inn");
 
         viewPager.setAdapter(adapter);
     }

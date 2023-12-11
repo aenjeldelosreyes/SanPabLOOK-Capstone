@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace = "com.study.sanpablook"
-    compileSdk = 34
+    compileSdk = 33
 
     defaultConfig {
         applicationId = "sanpablook.study.sanpablook"
