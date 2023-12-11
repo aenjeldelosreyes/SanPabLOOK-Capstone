@@ -48,6 +48,8 @@ dependencies {
     implementation ("com.google.android.gms:play-services-maps:18.2.0")
     implementation ("org.imaginativeworld.whynotimagecarousel:whynotimagecarousel:2.1.0")
     implementation ("me.relex:circleindicator:2.1.6")
+    implementation(platform("com.google.firebase:firebase-bom:32.7.0"))
+    implementation("com.google.firebase:firebase-analytics")
 
     //camera and gallery
     implementation ("com.github.dhaval2404:imagepicker:2.1")
