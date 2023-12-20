@@ -54,7 +54,7 @@ public class HomepageActivity extends AppCompatActivity implements OnMapReadyCal
 
 
         //button redirect to nature page
-        @SuppressLint({"MissingInflatedId", "LocalSuppress"}) View button = findViewById(R.id.nature_btn);
+        @SuppressLint({"MissingInflatedId", "LocalSuppress"}) View button = findViewById(R.id.natureBtn);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

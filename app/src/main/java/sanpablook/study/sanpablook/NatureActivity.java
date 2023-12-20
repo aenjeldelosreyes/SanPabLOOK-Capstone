@@ -18,7 +18,7 @@ public class NatureActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nature);
 
-        View button = findViewById(R.id.sampaloc_lake_pic);
+        View button = findViewById(R.id.sampaloclakePic);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
