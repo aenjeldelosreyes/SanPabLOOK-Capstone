@@ -13,3 +13,17 @@
 .externalNativeBuild
 .cxx
 local.properties
+
+# Firebase cache
+/.firebase/
+
+# Firebase config
+/google-services.json
+
+# Firebase cloud functions
+/functions/
+
+# Firebase hosting files
+/public/
+/firebase.json
+/.firebaserc
