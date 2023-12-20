@@ -40,7 +40,7 @@
                     app:layout_constraintHorizontal_bias="1.0"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:shapeAppearanceOverlay="@style/round_corner"
+                    app:shapeAppearanceOverlay="@style/round_corners"
                     app:srcCompat="@drawable/imgcasa" />
                 <!--Location Name-->
                 <TextView
@@ -491,9 +491,12 @@
                     android:textColor="@color/lighterBlack"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/spacer4" />
+
                 <!--Where image-->
-                <ImageView
-                    android:id="@+id/imgPalmerasGoogleMap"
+
+                <androidx.fragment.app.FragmentContainerView
+                    android:id="@+id/mapsCasaDine"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
                     android:layout_width="match_parent"
                     android:layout_height="250sp"
                     android:layout_marginStart="24dp"
@@ -501,7 +504,9 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/txtWhere"
-                    app:srcCompat="@drawable/imgpalmeraslocation" />
+                    app:layout_constraintVertical_bias="0.0">
+
+                </androidx.fragment.app.FragmentContainerView>
                 <!--spacer-->
                 <TextView
                     android:id="@+id/spacer5"
@@ -514,7 +519,7 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/imgPalmerasGoogleMap" />
+                    app:layout_constraintTop_toBottomOf="@+id/mapsCasaDine" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>

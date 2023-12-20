@@ -16,7 +16,7 @@
 
 
         <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/sampaloc_pic"
+            android:id="@+id/sampalocView"
             android:layout_width="match_parent"
             android:layout_height="378sp"
             android:scaleType="fitXY"
@@ -24,35 +24,62 @@
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/sampaloc_lake" />
+            app:shapeAppearanceOverlay="@style/round_corners"
+            app:srcCompat="@drawable/sampaloc_view" />
+
+        <!--back button-->
+        <ImageButton
+            android:id="@+id/btnBackNature"
+            android:layout_width="48sp"
+            android:layout_height="48sp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/round_btn"
+            android:backgroundTint="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_btn_back" />
+        <!--share button-->
+        <ImageButton
+            android:id="@+id/btnShareNature"
+            android:layout_width="48sp"
+            android:layout_height="48sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:padding="10sp"
+            android:background="@drawable/round_btn"
+            android:backgroundTint="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_btn_share" />
 
 
         <TextView
-            android:id="@+id/textView8"
+            android:id="@+id/sampalocLakeTitle"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="@string/sampaloc_lake"
+            android:text="@string/sampalocLake"
             android:textColor="@color/black"
             android:textSize="35sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.144"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/sampaloc_pic" />
+            app:layout_constraintTop_toBottomOf="@+id/sampalocView" />
 
         <TextView
-            android:id="@+id/textView9"
+            android:id="@+id/rate"
             android:layout_width="40dp"
             android:layout_height="30dp"
             android:layout_marginTop="12dp"
-            android:text="@string/_4_8"
-            android:textColor="@color/aqua"
+            android:text="4.8"
+            android:textColor="@color/blueText"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.072"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+            app:layout_constraintTop_toBottomOf="@+id/sampalocLakeTitle" />
 
         <LinearLayout
             android:id="@+id/linearLayout2"
@@ -62,12 +89,12 @@
             android:background="@null"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/textView9"
-            app:layout_constraintTop_toBottomOf="@+id/textView8"
+            app:layout_constraintStart_toEndOf="@+id/rate"
+            app:layout_constraintTop_toBottomOf="@+id/sampalocLakeTitle"
             tools:ignore="MissingConstraints">
 
             <ImageView
-                android:id="@+id/star_rate"
+                android:id="@+id/starRate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/rate_star"
@@ -75,7 +102,7 @@
                 tools:layout_editor_absoluteY="463dp" />
 
             <ImageView
-                android:id="@+id/star_rate2"
+                android:id="@+id/starRate2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/rate_star"
@@ -83,7 +110,7 @@
                 tools:layout_editor_absoluteY="463dp" />
 
             <ImageView
-                android:id="@+id/star_rate3"
+                android:id="@+id/starRate3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/rate_star"
@@ -91,7 +118,7 @@
                 tools:layout_editor_absoluteY="463dp" />
 
             <ImageView
-                android:id="@+id/star_rate4"
+                android:id="@+id/starRate4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/rate_star"
@@ -99,7 +126,7 @@
                 tools:layout_editor_absoluteY="463dp" />
 
             <ImageView
-                android:id="@+id/star_rate5"
+                android:id="@+id/starRate5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/rate_star_half"
@@ -113,12 +140,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="@string/_12_345_reviews"
+            android:text="@string/reviews"
             android:textColor="@color/gray"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/linearLayout2"
-            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+            app:layout_constraintTop_toBottomOf="@+id/sampalocLakeTitle" />
 
         <TextView
             android:id="@+id/location"
@@ -134,7 +161,7 @@
             app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
 
         <ImageView
-            android:id="@+id/imageView4"
+            android:id="@+id/locationIcon"
             android:layout_width="34dp"
             android:layout_height="32dp"
             android:layout_marginTop="8dp"
@@ -145,7 +172,7 @@
             app:srcCompat="@drawable/baseline_location" />
 
         <TextView
-            android:id="@+id/textView18"
+            android:id="@+id/PostalAddress"
             android:layout_width="296dp"
             android:layout_height="21dp"
             android:layout_marginTop="16dp"
@@ -155,11 +182,11 @@
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.061"
-            app:layout_constraintStart_toEndOf="@+id/imageView4"
+            app:layout_constraintStart_toEndOf="@+id/locationIcon"
             app:layout_constraintTop_toBottomOf="@+id/location" />
 
         <TextView
-            android:id="@+id/textView13"
+            android:id="@+id/descriptionTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
@@ -170,10 +197,10 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.097"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+            app:layout_constraintTop_toBottomOf="@+id/locationIcon" />
 
         <TextView
-            android:id="@+id/textView14"
+            android:id="@+id/description"
             android:layout_width="363dp"
             android:layout_height="77dp"
             android:layout_marginTop="8dp"
@@ -183,23 +210,23 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.625"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+            app:layout_constraintTop_toBottomOf="@+id/descriptionTitle" />
 
         <TextView
-            android:id="@+id/textView16"
+            android:id="@+id/quickTutorial"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/quick_tutorial"
+            android:text="@string/quickTutorial"
             android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.105"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+            app:layout_constraintTop_toBottomOf="@+id/description" />
 
         <TextView
-            android:id="@+id/textView17"
+            android:id="@+id/quickTutorialDescription"
             android:layout_width="363dp"
             android:layout_height="77dp"
             android:layout_marginTop="4dp"
@@ -209,7 +236,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.625"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView16" />
+            app:layout_constraintTop_toBottomOf="@+id/quickTutorial" />
 
         <Button
             android:id="@+id/buttonYt"
@@ -220,7 +247,7 @@
             android:backgroundTint="@color/selectedText"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView17" />
+            app:layout_constraintTop_toBottomOf="@+id/quickTutorialDescription" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

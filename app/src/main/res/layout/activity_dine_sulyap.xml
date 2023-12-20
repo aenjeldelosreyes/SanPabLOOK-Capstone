@@ -491,8 +491,9 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/spacer4" />
                 <!--Where image-->
-                <ImageView
-                    android:id="@+id/imgPalmerasGoogleMap"
+                <androidx.fragment.app.FragmentContainerView
+                    android:id="@+id/mapsSulyapDine"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
                     android:layout_width="match_parent"
                     android:layout_height="250sp"
                     android:layout_marginStart="24dp"
@@ -500,7 +501,10 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/txtWhere"
-                    app:srcCompat="@drawable/imgpalmeraslocation" />
+                    app:srcCompat="@drawable/imgpalmeraslocation">
+
+                </androidx.fragment.app.FragmentContainerView>
+
                 <!--spacer-->
                 <TextView
                     android:id="@+id/spacer5"
@@ -513,7 +517,7 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/imgPalmerasGoogleMap" />
+                    app:layout_constraintTop_toBottomOf="@+id/mapsSulyapDine" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
