@@ -91,34 +91,5 @@ public class ProfileFragment extends Fragment {
         startActivity(intent);
     }
 
-    //dialog box for edit profile pic
-//    private void showDialogEditProfile(View view) {
-//        final Dialog dialog = new Dialog(requireContext());
-//        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-//        dialog.setContentView(R.layout.dialog_box_profilepic);
-//
-//        LinearLayout takePhoto = dialog.findViewById(R.id.linearTakePhoto);
-//        LinearLayout choosePhoto = dialog.findViewById(R.id.linearChoosePhoto);
-//
-//        takePhoto.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Toast.makeText(requireContext(), "Take a photo is clicked", Toast.LENGTH_SHORT).show();
-//            }
-//        });
-//
-//        choosePhoto.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//
-//            }
-//        });
-//
-//        dialog.show();
-//        dialog.getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT,ViewGroup.LayoutParams.WRAP_CONTENT);
-//        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-//        dialog.getWindow().getAttributes().windowAnimations = R.style.DialogAnimation;
-//        dialog.getWindow().setGravity(Gravity.BOTTOM);
-//    }
 
 }

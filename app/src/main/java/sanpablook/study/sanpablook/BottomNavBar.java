@@ -8,23 +8,23 @@ import androidx.fragment.app.FragmentTransaction;
 
 import android.content.res.ColorStateList;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.study.sanpablook.databinding.ActivityMainBinding;
+import com.study.sanpablook.databinding.ActivityBottomNavBinding;
+import com.study.sanpablook.databinding.ActivityBottomNavBinding;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.study.sanpablook.R;
 
-public class MainActivity extends AppCompatActivity {
+public class BottomNavBar extends AppCompatActivity {
 
-    ActivityMainBinding binding;
+    ActivityBottomNavBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityMainBinding.inflate(getLayoutInflater());
+        binding = ActivityBottomNavBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         replaceFragment(new HomeFragment());
 
@@ -56,19 +56,19 @@ public class MainActivity extends AppCompatActivity {
             return true;
         });
 
-        // FAB Book
+        // FAB Booking for Hotel
         binding.floatingBook.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 binding.bottomNavigationView.setSelectedItemId(R.id.unclickableBooking);
-                replaceFragment(new BookFragment());
+                replaceFragment(new HotelFragment());
 
                 // Change FAB background & icon color when clicked
                 binding.floatingBook.setBackgroundTintList(
-                        ColorStateList.valueOf(ContextCompat.getColor(MainActivity.this, R.color.blue))
+                        ColorStateList.valueOf(ContextCompat.getColor(BottomNavBar.this, R.color.blue))
                 );
                 binding.floatingBook.setImageTintList(
-                        ColorStateList.valueOf(ContextCompat.getColor(MainActivity.this, R.color.light))
+                        ColorStateList.valueOf(ContextCompat.getColor(BottomNavBar.this, R.color.light))
                 );
             }
         });
@@ -87,10 +87,10 @@ public class MainActivity extends AppCompatActivity {
     //FAB reset to initial colors
     private void resetFabColors() {
         binding.floatingBook.setBackgroundTintList(
-                ColorStateList.valueOf(ContextCompat.getColor(MainActivity.this, R.color.lightBlue))
+                ColorStateList.valueOf(ContextCompat.getColor(BottomNavBar.this, R.color.lightBlue))
         );
         binding.floatingBook.setImageTintList(
-                ColorStateList.valueOf(ContextCompat.getColor(MainActivity.this, R.color.blue))
+                ColorStateList.valueOf(ContextCompat.getColor(BottomNavBar.this, R.color.blue))
         );
     }
 }

@@ -122,6 +122,7 @@
                     android:layout_marginStart="2sp"
                     android:fontFamily="@font/poppins_light"
                     android:text="@string/mockReview"
+                    android:textColor="#141414"
                     android:textSize="14sp"
                     app:layout_constraintStart_toEndOf="@+id/likeIcon"
                     app:layout_constraintTop_toBottomOf="@+id/casaTxt" />
@@ -143,6 +144,7 @@
                     android:layout_marginStart="2sp"
                     android:fontFamily="@font/poppins_light"
                     android:text="@string/accredited"
+                    android:textColor="#141414"
                     android:textSize="14sp"
                     app:layout_constraintStart_toEndOf="@+id/accreditedIcon"
                     app:layout_constraintTop_toBottomOf="@+id/casaTxt" />
@@ -155,6 +157,7 @@
                     android:layout_marginTop="16dp"
                     android:fontFamily="@font/poppins_light"
                     android:text="@string/medingLocation"
+                    android:textColor="#141414"
                     android:textSize="14sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/starIc" />
@@ -178,6 +181,7 @@
                     android:fontFamily="@font/poppins_light"
                     android:text="@string/about"
                     android:textSize="20sp"
+                    android:textColor="#141414"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/line" />
 
@@ -193,6 +197,7 @@
                     android:text="@string/aboutMeding"
                     android:textAlignment="viewStart"
                     android:textSize="14sp"
+                    android:textColor="#141414"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/About" />
@@ -211,10 +216,10 @@
                     android:id="@+id/stayHost"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
+                    android:layout_marginStart="24dp"
                     android:layout_marginTop="7dp"
                     android:fontFamily="@font/poppins_light"
-                    android:text="@string/yourHost"
+                    android:textColor="#141414"
                     android:textSize="20sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/line2" />
@@ -250,50 +255,59 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/stayProfile" />
 
-                <TextView
-                    android:id="@+id/stayProfileRate"
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:id="@+id/linearRatingsReviewHosting"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="24sp"
-                    android:layout_marginTop="5dp"
-                    android:background="@drawable/radius"
-                    android:fontFamily="@font/poppins_light"
-                    android:padding="5sp"
-                    android:text="@string/casaProfileRating"
-                    android:textColor="@color/white"
-                    android:textSize="14sp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:padding="15dp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/stayName" />
+                    app:layout_constraintTop_toBottomOf="@+id/stayName">
 
-                <TextView
-                    android:id="@+id/stayReview"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="12sp"
-                    android:layout_marginTop="5dp"
-                    android:background="@drawable/radius"
-                    android:fontFamily="@font/poppins_light"
-                    android:padding="5sp"
-                    android:text="@string/casaProfileReviews"
-                    android:textColor="@color/white"
-                    android:textSize="14sp"
-                    app:layout_constraintStart_toEndOf="@+id/stayProfileRate"
-                    app:layout_constraintTop_toBottomOf="@+id/stayName" />
+                    <TextView
+                        android:id="@+id/stayProfileRate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/radius"
+                        android:fontFamily="@font/poppins_light"
+                        android:padding="5sp"
+                        android:text="@string/casaProfileRating"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                         />
 
-                <TextView
-                    android:id="@+id/stayHosting"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="12sp"
-                    android:layout_marginTop="5dp"
-                    android:background="@drawable/radius"
-                    android:fontFamily="@font/poppins_light"
-                    android:padding="5sp"
-                    android:text="@string/casaProfileHosting"
-                    android:textColor="@color/white"
-                    android:textSize="14sp"
-                    app:layout_constraintStart_toEndOf="@+id/stayReview"
-                    app:layout_constraintTop_toBottomOf="@+id/stayName" />
+                    <TextView
+                        android:id="@+id/stayReview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12sp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/radius"
+                        android:fontFamily="@font/poppins_light"
+                        android:padding="5sp"
+                        android:text="@string/casaProfileReviews"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@+id/stayProfileRate"
+                        app:layout_constraintTop_toBottomOf="@+id/stayName" />
+
+                    <TextView
+                        android:id="@+id/stayHosting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12sp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/radius"
+                        android:fontFamily="@font/poppins_light"
+                        android:padding="5sp"
+                        android:text="@string/casaProfileHosting"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@+id/stayReview"
+                        app:layout_constraintTop_toBottomOf="@+id/stayName" />
+                </LinearLayout>
 
                 <TextView
                     android:id="@+id/stayProfileCasa"
@@ -306,10 +320,11 @@
                     android:justificationMode="inter_word"
                     android:text="@string/medingProfileInfo"
                     android:textAlignment="viewStart"
+                    android:textColor="@color/black"
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/stayReview" />
+                    app:layout_constraintTop_toBottomOf="@+id/linearRatingsReviewHosting" />
 
                 <Button
                     android:id="@+id/msgBtn"
@@ -317,8 +332,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:backgroundTint="#40C0D8"
+                    android:background="@drawable/rounded_corners_50"
                     android:fontFamily="@font/poppins_bold"
-                    android:padding="16sp"
+                    android:padding="10dp"
                     android:textColor="#FFFFFF"
                     android:text="@string/message"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -343,6 +359,7 @@
                     android:layout_marginTop="7dp"
                     android:fontFamily="@font/poppins_regular"
                     android:text="@string/offers"
+                    android:textColor="#141414"
                     android:textSize="20sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/line3" />
@@ -538,6 +555,7 @@
                     android:layout_marginTop="7dp"
                     android:fontFamily="@font/poppins_regular"
                     android:text="@string/stayRest"
+                    android:textColor="#141414"
                     android:textSize="20sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/line4" />
@@ -550,6 +568,7 @@
                     android:layout_marginTop="2sp"
                     android:fontFamily="@font/poppins_light"
                     android:text="@string/medingLocation"
+                    android:textColor="@color/hintColor"
                     android:textSize="14sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/stayResting" />
@@ -621,6 +640,7 @@
                     android:layout_marginStart="3sp"
                     android:fontFamily="@font/poppins_light"
                     android:text="@string/mockReview"
+                    android:textColor="#141414"
                     android:textSize="14sp"
                     app:layout_constraintStart_toEndOf="@+id/icLike2"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -672,7 +692,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="bottom"
-                                android:layout_margin="10sp"
+                                android:layout_marginLeft="10dp"
                                 android:fontFamily="@font/poppins_bold"
                                 android:paddingLeft="10sp"
                                 android:text="@string/showmore"
@@ -709,7 +729,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="bottom"
-                                android:layout_margin="10sp"
+                                android:layout_marginLeft="10dp"
                                 android:fontFamily="@font/poppins_bold"
                                 android:paddingLeft="10sp"
                                 android:text="@string/showmore"

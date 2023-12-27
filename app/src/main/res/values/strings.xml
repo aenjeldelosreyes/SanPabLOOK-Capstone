@@ -1,6 +1,43 @@
 <resources>
     <string name="app_name">SanPabLOOK</string>
 
+    //homepage
+    <string name="taraPhil">Tara, Phil!</string>
+    <string name="sampalocLake">Sampaloc Lake</string>
+    <string name="taraSantayo">Tara na! San Tayo?</string>
+    <string name="rate">4.8</string>
+    <string name="sampalokLakeSanPabloLaguna">Sampalok Lake, San Pablo, Laguna</string>
+    <string name="reviews">(12,345 reviews)</string>
+    <string name="quickTutorial">Quick Tutorial</string>
+    <string name="mohicap">Mohicap</string>
+    <string name="yamboPandinLake">Yambo-Pandin Lake</string>
+    <string name="createNewAccount">Create new Account</string>
+    <string name="alreadyRegister">Already Registered? Log in here.</string>
+    <string name="firstName">FIRST NAME</string>
+    <string name="enterFirstName">Enter First Name</string>
+    <string name="lastName">LAST NAME</string>
+    <string name="enterLastName">Enter Last Name</string>
+    <string name="emailCaps">EMAIL</string>
+    <string name="enterEmail">Enter Email</string>
+    <string name="passwordCaps">PASSWORD</string>
+    <string name="enterPassword">Enter Password</string>
+    <string name="dateOfBirth">DATE OF BIRTH</string>
+    <string name="selectDate">Select Date</string>
+    <string name="makeSureValid">Make sure that your first name and last name reflect on your Valid ID.</string>
+    <string name="signUp">Sign Up</string>
+    <string name="sanPabloCityLaguna">San Pablo City, Laguna</string>
+    <string name="mohicapLake">Mohicap Lake</string>
+    <string name="calibatoLake">Calibato Lake</string>
+    <string name="palakpakinLake">Palakpakin Lake</string>
+    <string name="nature">Nature</string>
+
+    <!-- Hotel Selects -->
+    <string name="hotelSelects">HOTEL</string>
+    <string name="resortSelects">RESORT</string>
+    <string name="bnbSelects">BNB</string>
+    <string name="motelSelects">MOTEL</string>
+    <string name="innSelects">INN</string>
+
     <!-- Hotel Main -->
     <string name="userLocation">18D Werner Schetelig Ave</string>
     <string name="hotel">Hotel</string>
@@ -62,6 +99,27 @@
         \n2 guests maximum</string>
     <string name="medingAvailable">Always open</string>
     <string name="appName">San PabLOOK</string>
+
+    <!-- Palmeras Hotel -->
+    <string name="palmerasHotel">Casa Palmeras Hotel</string>
+    <string name="palmerasHotelLocation">Purok 3 Barangay, San Nicolas, San Pablo, Laguna, 4000</string>
+    <string name="aboutPalmerasHotel">Casa Palmeras Hotel is located in San Pablo. The Lifestyle Strip and The Outlets at Lipa are worth checking out if shopping is on the agenda, while those wishing to experience the area\'s natural beauty can explore Sampaloc Lake and Lake Bunot.</string>
+    <string name="palmerasHotelProfileInfo">Take advantage of a garden, an arcade/game room, and dry cleaning/laundry services at Casa Palmeras Hotel. The onsite local and international cuisine restaurant features light fare. Stay connected with free WiFi in public areas, and guests can find other amenities such as a gym and a conference center.</string>
+    <string name="houserulesinfoPalmeras">Check in : 2:00 PM
+        \nCheck-out: 12:00 NN
+        \nMinimum check-in age: 18
+        \nPets not allowed</string>
+
+    <!-- Blue Diamond Court Hotel -->
+    <string name="blueDiamondotel">Blue Diamond Court</string>
+    <string name="diamondHotelLocation">P379W+3R2, Pan-Philippine Hwy, San Pablo City, 4000 Laguna</string>
+    <string name="aboutdiamondHotel">Casa Palmeras Hotel is located in San Pablo. The Lifestyle Strip and The Outlets at Lipa are worth checking out if shopping is on the agenda, while those wishing to experience the area\'s natural beauty can explore Sampaloc Lake and Lake Bunot.</string>
+    <string name="diamondHotelProfileInfo">Take advantage of a garden, an arcade/game room, and dry cleaning/laundry services at Casa Palmeras Hotel. The onsite local and international cuisine restaurant features light fare. Stay connected with free WiFi in public areas, and guests can find other amenities such as a gym and a conference center.</string>
+    <string name="houserulesinfoDiamond">Check in : 2:00 PM
+        \nCheck-out: 12:00 NN
+        \nMinimum check-in age: 18
+        \nPets not allowed</string>
+
 
     <!--NAVIGATION-->
     <string name="home">Home</string>
